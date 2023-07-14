@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Index</title>
+</head>
+<body>
+  <div class="upper_menu">
+    <a href="" class="nav_links" id="lnk1" onclick="return false;">CHARTS</a>
+    <a href="" class="nav_links" id="lnk2" onclick="return false;">ENROUTE</a>
+    <a href="" class="nav_links" id="lnk3" onclick="return false;">A/C</a>
+    <a href="" class="nav_links" id="lnk4" onclick="return false;">WX</a>
+    <a href="" class="nav_links" id="lnk5" onclick="return false;">PROCS</a>
+    <a href="" class="nav_links" id="lnk6" onclick="return false;">FLTS</a>
+    <a href="" class="nav_links" id="lnk7" onclick="return false;">COMMS</a>
+  </div>
+  <div class="menu" id="chart_menu">
+    <a href="" class="return_arrow" onclick="return false;"><<</a>
+    <form action="" class="form_chart_search">
+      <a class="categories" onclick="return false;">CHART</a>
+      <input class="charts_search" type="text">
+    </form> 
+  </div>
+  <div id="enroute_menu">
+    <!--  -->
+  </div>
+  <div class="menu" id="ac_menu">
+
+  </div>
+  <div class="menu" id="wx_menu">
+<!--  -->
+  </div>
+  <div class="menu" id="procedures_menu">
+
+  </div>
+  <div class="menu" id="flights_menu">
+
+  </div>
+  <div class="menu" id="atc_comm_menu">
+
+  </div>
+  <!-- ldza chart menu -->
+  <div class="ldza_choose_chart_menu">
+    <a href="" class="ldza_capture_return_link">LDZA | </a>
+    <div class="ldza_chart_content">
+      <a href="#" class="selected_chart_link" onclick="return false;"></a>
+      <a class="sel">SELECT</a>
+      <a class="__CAT_LINKS sel_star_hide">STAR</a>
+      <a class="__CAT_LINKS sel_appr_hide"></a>
+      <a href="" class="__CAT_LINKS sel_taxi_hide"></a>
+    </div>
+  </div>
+
+  <!-- modal window -->
+  <div class="modal_window_wrapper">
+    <div class="__modal_window_chart_select">
+      <div class="chart_titles">
+        <p class="label_rw">RUNWAY 04</p>
+        <a target="frame_content" class="sidlink">RUDIK 2Z [RUDI2Z], TEBLI 2Z [TEBL2Z]
+          VBA 2Z [VBA2Z], VEBAL 1Z [VEBA1Z]</a>
+        <p class="text">RUDIK 2Z [RUDI2Z], TEBLI 2Z [TEBL2Z]
+          VBA 2Z [VBA2Z], VEBAL 1Z [VEBA1Z] </p>
+        <p class="text">1</p>
+        <p class="text">1</p>
+        <p class="text">1</p>
+        <p class="text">1</p>
+        <p class="text">1</p>
+        <p class="text">1</p>
+        <p class="text">1</p>
+        <p class="text">1</p>
+        <p class="text">1</p>
+        <p class="text">1</p>
+        <p class="label_rw">RUNWAY 22</p>
+      </div>
+    </div>
+  </div>
+  <iframe name="frame_content" id="content_frame" src="" frameborder="0"></iframe>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
