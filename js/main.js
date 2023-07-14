@@ -27,7 +27,9 @@ const RETURN_ARROW = document.querySelector('.return_arrow')
 
 // get chart menu
 const LDZA_MENU = document.querySelector('.ldza_choose_chart_menu')
+// get chart search input
 
+const CHART_SEARCH_INPUT = document.querySelector('.charts_search')
 // get links
 const SidsLink = document.querySelector('.sidlink').addEventListener('click', Myfunc)
 // get content frame
@@ -39,6 +41,7 @@ const SEL_CHART_BTN = document.querySelector('.sel')
 const FORM_CHART_SEARCH = document.querySelector('.form_chart_search').addEventListener("submit", (event)=>
 {
   event.preventDefault();
+  localStorage.setItem('chart', CHART_SEARCH_INPUT.value)
   if (localStorage.getItem('chart'))
   {
     if (localStorage.getItem('chart') == "LDZA")
